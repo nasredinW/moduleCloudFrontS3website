@@ -1,10 +1,8 @@
-<!-- BEGIN_AUTOMATED_TF_DOCS_BLOCK -->
+
 #  Module Amazon CloudFront Secure S3 Website Dynamic Endpoint
 
 ## Overview
-This module serves as a template for the creation of a new terraform module under AWS following the [best practice IaC]() defined by autobiz.
-
-All AWS autobiz terraform modules are available under our [private terraform-registry](https://gitlab.aut.bz/autobiz/tech/infra/terraform/terraform-registry/-/infrastructure_registry?search[]=autobiz-module-aws-sample)
+This module serves as a template for the creation of a new terraform module under AWS following the [best practice IaC]() .
 
 This Terraform module sets up an S3-based static website with integrated CloudFront distribution. 
 
@@ -52,7 +50,7 @@ This section explains how the CloudFront distribution interacts with the S3 buck
 
 
 The following diagram shows an overview of how the solution works:
-![Architecture](./etc/docs/CloudFrontV1.png)
+![Architecture](./etc/docs/)
 
 ## Requirements
 You must have registered domain name  ,AWS account ,ARN of certificate to use,You must have IAM permissions to launch templates that create IAM roles,
@@ -69,7 +67,7 @@ and to create  the  AWS resources in the solution.
 Basic usage of this module is as follows:
 ```hcl
 module "my_module_name" {
-  	 source  = "gitlab.aut.bz/autobiz/<module-name>/aws"
+  	 source  = "z/<module-name>/aws"
   	 version  = "<x.x.x>"
   
 	 # Required variables
@@ -129,18 +127,10 @@ module "my_module_name" {
 | <a name="output_cloudfront_domain_name_with_redirect"></a> [cloudfront\_domain\_name\_with\_redirect](#output\_cloudfront\_domain\_name\_with\_redirect) | n/a |
 | <a name="output_secret"></a> [secret](#output\_secret) | n/a |
 
-## Contact
 
-AUTOBIZ SAS
-4 Place des Vosges Immeuble Lavoisier
-92400 Courbevoie
 
-Phone: 01 41 44 91 07
-Email: onduty@autobiz.com
-Site: corporate.autobiz.com
 
-Copyright 2023, autobiz S.A.S
-<!-- END_AUTOMATED_TF_DOCS_BLOCK -->
+
 
 
 
